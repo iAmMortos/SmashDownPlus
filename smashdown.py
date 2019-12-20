@@ -81,7 +81,6 @@ class SmashDown(object):
 def main():
   players = ['Father1337', 'Valfor']
   sd = SmashDown('characters.txt', players)
-  print('{:.2%}'.format(sd.history.get_win_rate('Valfor')))
 
 
 if __name__ == '__main__':

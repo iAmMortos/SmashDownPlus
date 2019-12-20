@@ -14,15 +14,40 @@ class MatchHistory(object):
     with open(self.historyfile, 'a') as f:
       f.write('%s\n' % result)
 
-  def get_win_rate(self, player):
+  def get_win_record(self, count_fn, win_fn):
     total = 0
     won = 0
     for r in self.match_results:
-      if player in r.players:
+      if count_fn(r):
         total += 1
-      if player == r.winner:
-        won += 1
+        if win_fn(r):
+          won += 1
     return 0 if total == 0 else won / total
+
+  def get_player_win_record(self, player):
+    c = lambda r: r.has_player(player)
+    w = lambda r: player == r.winner
+    return self.get_win_record(c, w)
+
+  def get_player_win_record_against_player(self, player, other):
+    if player == other:
+      raise Exception("Player and other must be different.")
+    c = lambda r: r.has_players(player, other)
+    w = lambda r: player == r.winner
+    return self.get_win_record(c, w)
+
+  def get_player_win_record_against_char(self, player, character):
+    pass
+
+  def get_char_win_record(self, character):
+    c = lambda r: character in r.characters
+    w = lambda r: r.players[r.winner] == character
+    return self.get_win_record(c, w)
+
+  def get_player_win_record_with_char(self, player, character):
+    c = lambda r: r.has_player_with_character(player, character)
+    w = lambda r: player == r.winner
+    return self.get_win_record(c, w)
 
   def _loadresults(self):
     results = []
