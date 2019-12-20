@@ -9,6 +9,13 @@ class MatchResult(object):
     wi = ps.index(self.winner)
     return '%s\t%s\t%s' % (self.timestamp, wi, '\t'.join(['%s|%s' % (p, self.players[p]) for p in ps]))
 
+  def get_opponent_characters(self, player):
+    characters = []
+    for p in self.players:
+      if p != player:
+        characters.append(self.players[p])
+    return characters
+
   def has_player(self, player):
     return player in self.players
 

@@ -39,6 +39,11 @@ class MatchHistory(object):
   def get_player_win_record_against_char(self, player, character):
     pass
 
+  def get_player_win_record_against_char_with_char(self, player, char, opchar):
+    pass
+
+  def get_player_win_record_with_char_
+
   def get_char_win_record(self, character):
     c = lambda r: character in r.characters
     w = lambda r: r.players[r.winner] == character
