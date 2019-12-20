@@ -29,20 +29,25 @@ class MatchHistory(object):
     w = lambda r: player == r.winner
     return self.get_win_record(c, w)
 
-  def get_player_win_record_against_player(self, player, other):
-    if player == other:
+  def get_player_win_record_against_player(self, player, opponent):
+    if player == opponent:
       raise Exception("Player and other must be different.")
-    c = lambda r: r.has_players(player, other)
+    c = lambda r: r.has_players(player, opponent)
     w = lambda r: player == r.winner
     return self.get_win_record(c, w)
 
   def get_player_win_record_against_char(self, player, character):
+    c = lambda r: r.has_player(player) and character in r.get_opponent_characters(player)
+    w = lambda r: player == r.winner
+    return self.get_win_record(c, w)
+
+  def get_player_win_record_with_char_against_opponent(self, player, char, opponent):
     pass
 
   def get_player_win_record_against_char_with_char(self, player, char, opchar):
     pass
 
-  def get_player_win_record_with_char_against_opponent_with_character(self, player, char, op, opchar):
+  def get_player_win_record_with_char_against_opponent_with_character(self, player, char, opponent, opchar):
     pass
 
   def get_char_win_record(self, character):
