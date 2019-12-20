@@ -42,7 +42,8 @@ class MatchHistory(object):
   def get_player_win_record_against_char_with_char(self, player, char, opchar):
     pass
 
-  def get_player_win_record_with_char_
+  def get_player_win_record_with_char_against_opponent_with_character(self, player, char, op, opchar):
+    pass
 
   def get_char_win_record(self, character):
     c = lambda r: character in r.characters
