@@ -29,6 +29,20 @@ class MatchHistory(object):
     w = lambda r: player == r.winner
     return self.get_win_record(c, w)
 
+  def get_character_win_record(self, character):
+    c = lambda r: character in r.characters
+    w = lambda r: r.players[r.winner] == character
+    return self.get_win_record(c, w)
+
+  def get_character_win_record_against_opponent(self, character, opponent):
+    pass
+
+  def get_character_win_record_against_character(self, char, opchar):
+    pass
+
+  def get_character_with_record_against_opponent_with_character(self, char, opponent, opchar):
+    pass
+
   def get_player_win_record_against_player(self, player, opponent):
     if player == opponent:
       raise Exception("Player and other must be different.")
@@ -41,22 +55,23 @@ class MatchHistory(object):
     w = lambda r: player == r.winner
     return self.get_win_record(c, w)
 
-  def get_player_win_record_with_char_against_opponent(self, player, char, opponent):
-    pass
-
-  def get_player_win_record_against_char_with_char(self, player, char, opchar):
-    pass
-
-  def get_player_win_record_with_char_against_opponent_with_character(self, player, char, opponent, opchar):
-    pass
-
-  def get_char_win_record(self, character):
-    c = lambda r: character in r.characters
-    w = lambda r: r.players[r.winner] == character
-    return self.get_win_record(c, w)
-
   def get_player_win_record_with_char(self, player, character):
     c = lambda r: r.has_player_with_character(player, character)
+    w = lambda r: player == r.winner
+    return self.get_win_record(c, w)
+
+  def get_player_win_record_with_char_against_char(self, player, char, opchar):
+    c = lambda r: r.has_player_with_character(player, char) and opchar in r.get_opponent_characters(player)
+    w = lambda r: player == r.winner
+    return self.get_win_record(c, w)
+
+  def get_player_win_record_with_char_against_opponent(self, player, char, opponent):
+    c = lambda r: r.has_player(player) and r.get_players_character(player) == char and opponent in r.get_opponents(player)
+    w = lambda r: player == r.winner
+    return self.get_win_record(c, w)
+
+  def get_player_win_record_with_char_against_opponent_with_character(self, player, char, opponent, opchar):
+    c = lambda r: r.has_player(player) and r.get_players_character(player) == char and opponent in r.get_opponents(player) and r.get_players_character(opponent) == opchar
     w = lambda r: player == r.winner
     return self.get_win_record(c, w)
 
