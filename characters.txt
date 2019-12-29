@@ -40,9 +40,9 @@ Marth
 Mega Man
 Meta Knight
 Mewtwo
-Mii Brawler
-Mii Swordfighter
-Mii Gunner
+# Mii Brawler
+# Mii Swordfighter
+# Mii Gunner
 Mr. Game & Watch
 Ness
 Olimar

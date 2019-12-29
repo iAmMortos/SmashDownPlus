@@ -58,11 +58,15 @@ class SmashDown(object):
 
   def get_player_char_map(self):
     return {p: self.players[p].cur_char for p in self.players}
+    
+  def get_player_wins_map(self):
+  	return {p: self.players[p].wins for p in self.players}
 
   def get_player_names(self):
     return sorted(list(self.players.keys()))
 
   def winner(self, player):
+    self.players[player].win()
     self.history.add_winner(self.get_player_char_map(), player, int(datetime.utcnow().timestamp()))
 
   @property
@@ -76,6 +80,10 @@ class SmashDown(object):
   @property
   def num_matches_left(self):
     return self.num_characters_left // self.num_players
+    
+  @property
+  def cur_match_num(self):
+  	return self.total_matches - self.num_matches_left
 
 
 def main():
