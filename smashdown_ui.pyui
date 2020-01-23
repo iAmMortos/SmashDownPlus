@@ -5,12 +5,79 @@
         "nodes" : [
 
         ],
+        "frame" : "{{240, 0}, {240, 320}}",
+        "class" : "View",
+        "attributes" : {
+          "uuid" : "E358E5A8-2149-419C-AF47-B89E0CD256D8",
+          "frame" : "{{190, 110}, {100, 100}}",
+          "background_color" : "RGBA(0.183105,0.183105,0.671384,1.000000)",
+          "class" : "View",
+          "name" : "bg_color_2",
+          "flex" : "WHL"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 0}, {240, 320}}",
+        "class" : "View",
+        "attributes" : {
+          "flex" : "WHR",
+          "frame" : "{{190, 110}, {100, 100}}",
+          "background_color" : "RGBA(0.739651,0.102021,0.102021,1.000000)",
+          "class" : "View",
+          "name" : "bg_color_1",
+          "uuid" : "E358E5A8-2149-419C-AF47-B89E0CD256D8"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{240, 0}, {240, 320}}",
+        "class" : "ImageView",
+        "attributes" : {
+          "border_width" : 0,
+          "flex" : "WHL",
+          "frame" : "{{190, 110}, {100, 100}}",
+          "uuid" : "246BD408-725C-4C33-92A0-17A43D62833F",
+          "corner_radius" : 0,
+          "class" : "ImageView",
+          "border_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "bg2"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 0}, {240, 320}}",
+        "class" : "ImageView",
+        "attributes" : {
+          "border_width" : 0,
+          "flex" : "WHR",
+          "frame" : "{{190, 110}, {100, 100}}",
+          "uuid" : "246BD408-725C-4C33-92A0-17A43D62833F",
+          "corner_radius" : 0,
+          "class" : "ImageView",
+          "border_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "name" : "bg1"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
         "frame" : "{{0, 0}, {240, 320}}",
         "class" : "ImageView",
         "attributes" : {
           "flex" : "WHR",
           "frame" : "{{190, 110}, {100, 100}}",
-          "background_color" : "RGBA(0.723312,0.099767,0.099767,1.000000)",
           "class" : "ImageView",
           "name" : "iv_p1",
           "uuid" : "246BD408-725C-4C33-92A0-17A43D62833F"
@@ -26,7 +93,6 @@
         "attributes" : {
           "flex" : "WHL",
           "frame" : "{{190, 110}, {100, 100}}",
-          "background_color" : "RGBA(0.270077,0.314699,0.783224,1.000000)",
           "class" : "ImageView",
           "name" : "iv_p2",
           "uuid" : "246BD408-725C-4C33-92A0-17A43D62833F"
@@ -44,7 +110,7 @@
           "font_size" : 18,
           "background_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
           "frame" : "{{165, 144}, {150, 32}}",
-          "alignment" : "left",
+          "alignment" : "center",
           "alpha" : 0.60000000000000009,
           "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "text" : "Player 1 Name",
@@ -66,7 +132,7 @@
           "flex" : "WLB",
           "background_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
           "frame" : "{{165, 144}, {150, 32}}",
-          "alignment" : "right",
+          "alignment" : "center",
           "alpha" : 0.60000000000000009,
           "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "text" : "Player 2 Name",
@@ -81,22 +147,22 @@
         "nodes" : [
 
         ],
-        "frame" : "{{208, 250}, {64, 64}}",
-        "class" : "Button",
+        "frame" : "{{192, 0}, {48, 48}}",
+        "class" : "Label",
         "attributes" : {
-          "flex" : "LRT",
-          "uuid" : "E701D622-007F-4C2D-BA62-77B768C2E0B4",
-          "image_name" : "iob:arrow_swap_32",
-          "corner_radius" : 32,
-          "background_color" : "RGBA(0.253859,0.698113,0.550029,1.000000)",
-          "frame" : "{{200, 144}, {80, 32}}",
+          "uuid" : "A9B7E0D0-9946-4C81-8780-32036802F40E",
+          "font_size" : 32,
+          "corner_radius" : 24,
+          "frame" : "{{165, 144}, {150, 32}}",
           "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "border_width" : 0,
-          "title" : "",
-          "alpha" : 0.80000000000000004,
-          "class" : "Button",
-          "name" : "btn_swap",
-          "font_size" : 15
+          "alignment" : "center",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "40",
+          "font_name" : "Futura-Bold",
+          "class" : "Label",
+          "name" : "score1",
+          "flex" : "LRB"
         },
         "selected" : false
       },
@@ -104,7 +170,115 @@
         "nodes" : [
 
         ],
-        "frame" : "{{6, 250}, {64, 64}}",
+        "frame" : "{{240, 0}, {48, 48}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "A9B7E0D0-9946-4C81-8780-32036802F40E",
+          "font_size" : 32,
+          "corner_radius" : 24,
+          "frame" : "{{165, 144}, {150, 32}}",
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_width" : 0,
+          "border_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "alignment" : "center",
+          "text" : "40",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "font_name" : "Futura-Bold",
+          "class" : "Label",
+          "name" : "score2",
+          "flex" : "LRB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 300}, {480, 20}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "19F1C756-B49B-42C8-99E4-17AAE627058A",
+          "font_size" : 13,
+          "background_color" : "RGBA(0.028302,0.028302,0.028302,1.000000)",
+          "frame" : "{{165, 144}, {150, 32}}",
+          "alignment" : "center",
+          "alpha" : 0.5,
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "Label",
+          "font_name" : "<System>",
+          "class" : "Label",
+          "name" : "info_lbl",
+          "flex" : "WT"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 266}, {480, 34}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "954A4908-C377-422A-84A6-92C429059421",
+          "font_size" : 24,
+          "background_color" : "RGBA(0.017296,0.017296,0.017296,1.000000)",
+          "frame" : "{{165, 144}, {150, 32}}",
+          "alignment" : "center",
+          "alpha" : 0.19999999999999996,
+          "text" : "",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "font_name" : "Futura-CondensedExtraBold",
+          "class" : "Label",
+          "name" : "",
+          "flex" : "WT"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 266}, {240, 34}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WRT",
+          "name" : "ch1",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "frame" : "{{165, 144}, {150, 32}}",
+          "uuid" : "954A4908-C377-422A-84A6-92C429059421",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "Mr. Game & Watch",
+          "font_size" : 24,
+          "font_name" : "Futura-CondensedExtraBold"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{240, 266}, {240, 34}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WLT",
+          "font_size" : 24,
+          "font_name" : "Futura-CondensedExtraBold",
+          "frame" : "{{165, 144}, {150, 32}}",
+          "uuid" : "954A4908-C377-422A-84A6-92C429059421",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "Rosalina & Luma",
+          "name" : "ch2",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 228}, {64, 64}}",
         "class" : "Button",
         "attributes" : {
           "uuid" : "E701D622-007F-4C2D-BA62-77B768C2E0B4",
@@ -127,7 +301,30 @@
         "nodes" : [
 
         ],
-        "frame" : "{{410, 250}, {64, 64}}",
+        "frame" : "{{208, 228}, {64, 64}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "E701D622-007F-4C2D-BA62-77B768C2E0B4",
+          "image_name" : "iob:arrow_swap_32",
+          "flex" : "LRT",
+          "corner_radius" : 32,
+          "background_color" : "RGBA(0.253859,0.698113,0.550029,1.000000)",
+          "frame" : "{{200, 144}, {80, 32}}",
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_width" : 0,
+          "title" : "",
+          "alpha" : 0.80000000000000004,
+          "class" : "Button",
+          "name" : "btn_swap",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{410, 228}, {64, 64}}",
         "class" : "Button",
         "attributes" : {
           "uuid" : "E701D622-007F-4C2D-BA62-77B768C2E0B4",
@@ -144,18 +341,88 @@
           "name" : "btn_p2_win",
           "font_size" : 15
         },
-        "selected" : true
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{192, 40}, {48, 20}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "A9B7E0D0-9946-4C81-8780-32036802F40E",
+          "flex" : "LRB",
+          "corner_radius" : 0,
+          "frame" : "{{165, 144}, {150, 32}}",
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_width" : 0,
+          "alignment" : "center",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "(adv)",
+          "font_name" : "Futura-Bold",
+          "class" : "Label",
+          "name" : "adv1",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{240, 40}, {48, 20}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "A9B7E0D0-9946-4C81-8780-32036802F40E",
+          "font_size" : 15,
+          "corner_radius" : 0,
+          "frame" : "{{165, 144}, {150, 32}}",
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_width" : 0,
+          "alignment" : "center",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "(adv)",
+          "font_name" : "Futura-Bold",
+          "class" : "Label",
+          "name" : "adv2",
+          "flex" : "LRB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{180, 84}, {120, 120}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "2CE8AD5D-D0B3-4686-ABC1-63BCC1EAE198",
+          "name" : "btn_reset",
+          "font_size" : 15,
+          "corner_radius" : 60,
+          "background_color" : "RGBA(0.966231,0.828612,0.333183,1.000000)",
+          "frame" : "{{200, 144}, {80, 32}}",
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_width" : 0,
+          "title" : "",
+          "alpha" : 0.5,
+          "class" : "Button",
+          "image_name" : "iob:loop_256",
+          "flex" : "LRTB"
+        },
+        "selected" : false
       }
     ],
     "frame" : "{{0, 0}, {480, 320}}",
     "class" : "View",
     "attributes" : {
-      "custom_class" : "SmashDownUI",
+      "flex" : "",
       "enabled" : true,
-      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "custom_class" : "SmashDownUI",
       "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
-      "flex" : ""
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : ""
     },
     "selected" : false
   }

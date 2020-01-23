@@ -38,6 +38,10 @@ class SmashDown(object):
 
   def reset_chars(self):
     self.characters = self._loadchars(self.charfile)
+    
+  def reset_wins(self):
+  	for player in self.players:
+  		self.players[player].reset_wins()
 
   def swap_chars(self, p1=None, p2=None):
     if p1 is None and p2 is None and self.num_players == 2:
