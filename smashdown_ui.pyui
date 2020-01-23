@@ -10,6 +10,7 @@
         "attributes" : {
           "flex" : "WHR",
           "frame" : "{{190, 110}, {100, 100}}",
+          "background_color" : "RGBA(0.723312,0.099767,0.099767,1.000000)",
           "class" : "ImageView",
           "name" : "iv_p1",
           "uuid" : "246BD408-725C-4C33-92A0-17A43D62833F"
@@ -25,9 +26,123 @@
         "attributes" : {
           "flex" : "WHL",
           "frame" : "{{190, 110}, {100, 100}}",
+          "background_color" : "RGBA(0.270077,0.314699,0.783224,1.000000)",
           "class" : "ImageView",
           "name" : "iv_p2",
           "uuid" : "246BD408-725C-4C33-92A0-17A43D62833F"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 6}, {100, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "987D56C2-E00D-4683-B92C-6A2F86D6430A",
+          "font_size" : 18,
+          "background_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "frame" : "{{165, 144}, {150, 32}}",
+          "alignment" : "left",
+          "alpha" : 0.60000000000000009,
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "Player 1 Name",
+          "font_name" : "<System-Bold>",
+          "class" : "Label",
+          "name" : "lbl_p1",
+          "flex" : "WRB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{380, 6}, {100, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "987D56C2-E00D-4683-B92C-6A2F86D6430A",
+          "flex" : "WLB",
+          "background_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "frame" : "{{165, 144}, {150, 32}}",
+          "alignment" : "right",
+          "alpha" : 0.60000000000000009,
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "Player 2 Name",
+          "font_name" : "<System-Bold>",
+          "class" : "Label",
+          "name" : "lbl_p2",
+          "font_size" : 18
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{208, 250}, {64, 64}}",
+        "class" : "Button",
+        "attributes" : {
+          "flex" : "LRT",
+          "uuid" : "E701D622-007F-4C2D-BA62-77B768C2E0B4",
+          "image_name" : "iob:arrow_swap_32",
+          "corner_radius" : 32,
+          "background_color" : "RGBA(0.253859,0.698113,0.550029,1.000000)",
+          "frame" : "{{200, 144}, {80, 32}}",
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_width" : 0,
+          "title" : "",
+          "alpha" : 0.80000000000000004,
+          "class" : "Button",
+          "name" : "btn_swap",
+          "font_size" : 15
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 250}, {64, 64}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "E701D622-007F-4C2D-BA62-77B768C2E0B4",
+          "name" : "btn_p1_win",
+          "font_size" : 15,
+          "corner_radius" : 32,
+          "background_color" : "RGBA(1.000000,0.000000,0.000000,1.000000)",
+          "frame" : "{{200, 144}, {80, 32}}",
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_width" : 0,
+          "title" : "",
+          "alpha" : 0.80000000000000004,
+          "class" : "Button",
+          "image_name" : "iob:checkmark_32",
+          "flex" : "RT"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{410, 250}, {64, 64}}",
+        "class" : "Button",
+        "attributes" : {
+          "uuid" : "E701D622-007F-4C2D-BA62-77B768C2E0B4",
+          "image_name" : "iob:checkmark_32",
+          "flex" : "LT",
+          "corner_radius" : 32,
+          "background_color" : "RGBA(0.000000,0.000000,1.000000,1.000000)",
+          "frame" : "{{200, 144}, {80, 32}}",
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_width" : 0,
+          "title" : "",
+          "alpha" : 0.80000000000000004,
+          "class" : "Button",
+          "name" : "btn_p2_win",
+          "font_size" : 15
         },
         "selected" : true
       }
@@ -35,6 +150,7 @@
     "frame" : "{{0, 0}, {480, 320}}",
     "class" : "View",
     "attributes" : {
+      "custom_class" : "SmashDownUI",
       "enabled" : true,
       "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
