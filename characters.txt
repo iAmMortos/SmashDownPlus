@@ -2,6 +2,7 @@ Banjo & Kazooie
 Bayonetta
 Bowser
 Bowser Jr.
+# Byleth
 Captain Falcon
 Chrom
 Cloud
@@ -40,9 +41,6 @@ Marth
 Mega Man
 Meta Knight
 Mewtwo
-# Mii Brawler
-# Mii Swordfighter
-# Mii Gunner
 Mr. Game & Watch
 Ness
 Olimar
@@ -81,3 +79,9 @@ Pokemon Trainer
 # Squirtle
 # Ivysaur
 # Charizard
+
+# Mii Fighter
+
+# Mii Brawler
+# Mii Swordfighter
+# Mii Gunner
