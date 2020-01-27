@@ -2,7 +2,7 @@ Banjo & Kazooie
 Bayonetta
 Bowser
 Bowser Jr.
-# Byleth
+Byleth
 Captain Falcon
 Chrom
 Cloud
@@ -80,7 +80,7 @@ Pokemon Trainer
 # Ivysaur
 # Charizard
 
-# Mii Fighter
+Mii Fighter
 
 # Mii Brawler
 # Mii Swordfighter
