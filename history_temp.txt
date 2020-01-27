@@ -1,5 +1,1 @@
-1579776505	0	Father1337|Ness	Valfor|Piranha Plant
-1579776510	1	Father1337|Donkey Kong	Valfor|Villager
-1579776511	0	Father1337|Meta Knight	Valfor|Shulk
-1579776513	0	Father1337|Wolf	Valfor|Inkling
-1579776514	1	Father1337|Young Link	Valfor|Greninja
+
