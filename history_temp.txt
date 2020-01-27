@@ -3,3 +3,42 @@
 1579776511	0	Father1337|Meta Knight	Valfor|Shulk
 1579776513	0	Father1337|Wolf	Valfor|Inkling
 1579776514	1	Father1337|Young Link	Valfor|Greninja
+1580177724	1	Father1337|Sheik	Valfor|Hero
+1580177724	0	Father1337|Ness	Valfor|Mewtwo
+1580177725	1	Father1337|Duck Hunt	Valfor|Young Link
+1580177725	0	Father1337|Rosalina & Luma	Valfor|Palutena
+1580177725	1	Father1337|Ridley	Valfor|Zero Suit Samus
+1580177725	0	Father1337|Captain Falcon	Valfor|Peach
+1580177725	1	Father1337|Yoshi	Valfor|Corrin
+1580177725	0	Father1337|Wario	Valfor|Falco
+1580177726	1	Father1337|Terry	Valfor|Dark Pit
+1580177726	0	Father1337|Snake	Valfor|Luigi
+1580177726	1	Father1337|Pichu	Valfor|Mr. Game & Watch
+1580177726	0	Father1337|Pikachu	Valfor|Ice Climbers
+1580177726	1	Father1337|Robin	Valfor|Zelda
+1580177726	0	Father1337|Ryu	Valfor|Ganondorf
+1580177726	0	Father1337|Incineroar	Valfor|Wii Fit Trainer
+1580177726	0	Father1337|Dark Samus	Valfor|Richter
+1580177727	1	Father1337|Bayonetta	Valfor|Toon Link
+1580177727	1	Father1337|Ken	Valfor|Isabelle
+1580177727	1	Father1337|Sonic	Valfor|Joker
+1580177727	1	Father1337|Marth	Valfor|Piranha Plant
+1580177727	0	Father1337|Chrom	Valfor|Daisy
+1580177727	0	Father1337|Kirby	Valfor|Ike
+1580177727	0	Father1337|Diddy Kong	Valfor|Bowser Jr.
+1580177728	1	Father1337|Donkey Kong	Valfor|Roy
+1580177728	1	Father1337|King Dedede	Valfor|Simon
+1580177728	1	Father1337|Greninja	Valfor|King K. Rool
+1580177728	0	Father1337|R.O.B.	Valfor|Shulk
+1580177728	0	Father1337|Pac-Man	Valfor|Lucina
+1580177728	0	Father1337|Mega Man	Valfor|Villager
+1580177729	1	Father1337|Samus	Valfor|Pit
+1580177729	1	Father1337|Lucas	Valfor|Lucario
+1580177729	1	Father1337|Wolf	Valfor|Mii Fighter
+1580177729	0	Father1337|Pokemon Trainer	Valfor|Byleth
+1580177730	0	Father1337|Bowser	Valfor|Dr. Mario
+1580177730	1	Father1337|Cloud	Valfor|Banjo & Kazooie
+1580177730	0	Father1337|Olimar	Valfor|Little Mac
+1580177732	0	Father1337|Fox	Valfor|Jigglypuff
+1580177734	1	Father1337|Inkling	Valfor|Mario
+1580177736	1	Father1337|Meta Knight	Valfor|Link

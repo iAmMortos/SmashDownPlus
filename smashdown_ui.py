@@ -69,14 +69,14 @@ class SmashDownUI (ui.View):
 			sts[ws[0]] = 'win!'
 		elif ps[ws[1]] + (nm - cm) < ps[ws[0]]:
 			sts[ws[1]] = 'lose!'
-		elif ps == nm//2 and cm == nm:
-			return 'tie!'
-		elif ps == nm//2 and cm + 1 == nm and cm - ps == ps:
-			return '!!!'
-		elif ps == nm//2 and ps != cm - ps:
-			return '(adv)'
-		return ''
-		
+		elif ps[ws[0]] == ps[ws[1]] and cm == nm:
+			sts[ws[0]] = 'tie!'
+			sts[ws[1]] = 'tie!'
+		elif ps[ws[0]] == ps[ws[1]] and cm + 1 == nm:
+			sts[ws[0]] = '!!!'
+			sts[ws[1]] = '!!!'
+		elif ps[ws[0]] + 1 > nm//2:
+			sts[ws[0]] = '(adv)'
 		return sts
 		
 	def update_display(self):
