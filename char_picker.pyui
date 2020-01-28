@@ -1,0 +1,72 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 43}, {350, 422}}",
+        "class" : "ScrollView",
+        "attributes" : {
+          "flex" : "WH",
+          "border_width" : 1,
+          "frame" : "{{29, 63}, {320, 320}}",
+          "uuid" : "FE939093-7365-4C38-9562-B2D286DB6A47",
+          "content_height" : 320,
+          "class" : "ScrollView",
+          "content_width" : 320,
+          "corner_radius" : 0,
+          "name" : "sv",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)"
+        },
+        "selected" : true
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{224, 6}, {120, 29}}",
+        "class" : "SegmentedControl",
+        "attributes" : {
+          "uuid" : "65F290C0-D95D-4885-BCB1-7D3535BCF6F4",
+          "frame" : "{{129, 208}, {120, 29}}",
+          "name" : "sc",
+          "class" : "SegmentedControl",
+          "segments" : "Roster|A..Z",
+          "flex" : "LB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 6}, {210, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label1",
+          "flex" : "WB",
+          "frame" : "{{114, 207}, {150, 32}}",
+          "uuid" : "A2E1D596-6FD3-4FB1-B834-2448F524618E",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "Choose A Character",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {350, 465}}",
+    "class" : "View",
+    "attributes" : {
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "custom_class" : "CharPicker",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]

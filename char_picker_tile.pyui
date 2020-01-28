@@ -1,0 +1,52 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 0}, {276, 82}}",
+        "class" : "ImageView",
+        "attributes" : {
+          "flex" : "WH",
+          "frame" : "{{88, -9}, {100, 100}}",
+          "class" : "ImageView",
+          "name" : "iv",
+          "uuid" : "CC9E5211-C815-49A8-96F5-07868DF32275"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{6, 23}, {264, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WTB",
+          "name" : "lbl",
+          "text_color" : "RGBA(0.936819,0.936819,0.936819,1.000000)",
+          "frame" : "{{63, 25}, {150, 32}}",
+          "uuid" : "DBCB53E4-757A-4909-8A0D-FC0062E9ECEA",
+          "class" : "Label",
+          "alignment" : "left",
+          "text" : "",
+          "font_size" : 16,
+          "font_name" : "Futura-Bold"
+        },
+        "selected" : true
+      }
+    ],
+    "frame" : "{{0, 0}, {276, 82}}",
+    "class" : "View",
+    "attributes" : {
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "custom_class" : "CharPickerTile",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]

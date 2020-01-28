@@ -9,13 +9,13 @@ Cloud
 Corrin
 Daisy
 Dark Pit
-Dark Samus
+5	Dark Samus
 Diddy Kong
-Donkey Kong
+2	Donkey Kong
 Dr. Mario
 Duck Hunt
 Falco
-Fox
+8	Fox
 Ganondorf
 Greninja
 Hero
@@ -29,14 +29,14 @@ Joker
 Ken
 King Dedede
 King K. Rool
-Kirby
-Link
+7	Kirby
+3	Link
 Little Mac
 Lucario
 Lucas
 Lucina
 Luigi
-Mario
+1	Mario
 Marth
 Mega Man
 Meta Knight
@@ -48,7 +48,7 @@ Pac-Man
 Palutena
 Peach
 Pichu
-Pikachu
+9	Pikachu
 Piranha Plant
 Pit
 Richter
@@ -58,7 +58,7 @@ Robin
 Rosalina & Luma
 Roy
 Ryu
-Samus
+4	Samus
 Sheik
 Shulk
 Simon
@@ -70,7 +70,7 @@ Villager
 Wario
 Wii Fit Trainer
 Wolf
-Yoshi
+6	Yoshi
 Young Link
 Zelda
 Zero Suit Samus
@@ -80,7 +80,7 @@ Pokemon Trainer
 # Ivysaur
 # Charizard
 
-Mii Fighter
+# Mii Fighter
 
 # Mii Brawler
 # Mii Swordfighter

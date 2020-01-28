@@ -58,25 +58,28 @@ class SmashDownUI (ui.View):
 		
 	def get_player_score_status(self):
 		ps = self.sd.get_player_wins_map()
-		ws = sorted(ps, key=ps.get)
+		ws = sorted(ps, key=ps.get, reverse=True)
 		nm = self.sd.total_matches
 		cm = self.sd.completed_matches
-		p1, p2 = self.p1_name, self.p2_name
+		w1, w2 = ws[0], ws[1]
+		w1s, w2s = ps[w1], ps[w2]
 		
 		sts = {player:'' for player in ps}
 		
-		if ps[ws[0]] > ps[ws[1]] + (nm - cm):
-			sts[ws[0]] = 'win!'
-		elif ps[ws[1]] + (nm - cm) < ps[ws[0]]:
-			sts[ws[1]] = 'lose!'
-		elif ps == nm//2 and cm == nm:
-			return 'tie!'
-		elif ps == nm//2 and cm + 1 == nm and cm - ps == ps:
-			return '!!!'
-		elif ps == nm//2 and ps != cm - ps:
-			return '(adv)'
-		return ''
+		if w1s + 1 > nm//2:
+			sts[w1] = '(adv)'
+		if w1s > w2s + (nm - cm):
+			sts[w1] = 'win!'
+		if w2s + (nm - cm) < w1s:
+			sts[w2] = 'lose!'
 		
+		if w1s == w2s and cm == nm:
+			sts[w1] = 'tie!'
+			sts[w2] = 'tie!'
+		elif w1s == w2s and cm + 1 == nm:
+			sts[w1] = '!!!'
+			sts[w2] = '!!!'
+
 		return sts
 		
 	def update_display(self):
@@ -120,8 +123,12 @@ class SmashDownUI (ui.View):
 			self.btn_p1_win.hidden = False
 			self.btn_p2_win.hidden = False
 			self.btn_swap.hidden = False
-			infotxt = 'Round %s of %s. %s matches left after this one.' % (self.sd.cur_match_num, self.sd.total_matches, self.sd.num_matches_left)
-			self.info.text = infotxt
+			infotext = 'Round %s of %s. ' % (self.sd.cur_match_num, self.sd.total_matches)
+			if self.sd.num_matches_left > 0:
+				infotext += '%s match%s left after this one.' % (self.sd.num_matches_left, 'es' if self.sd.num_matches_left > 1 else '')
+			else:
+				infotext += 'Final match!'
+			self.info.text = infotext
 		
 	def swap(self, sender):
 		if not self.game_over:
@@ -160,5 +167,5 @@ class SmashDownUI (ui.View):
 		
 
 if __name__ == '__main__':
-	v = SmashDownUI.load_view('characters.txt', 'history_temp.txt', ['Father1337', 'Valfor'])
+	v = SmashDownUI.load_view('characters.txt', 'history.txt', ['Father1337', 'Valfor'])
 	v.present(orientations=['landscape'], hide_title_bar=True)
