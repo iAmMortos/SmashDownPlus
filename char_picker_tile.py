@@ -7,7 +7,8 @@ from touch_view import TouchView
 class CharPickerTile (ui.View):
 	
 	def __init__(self):
-		self.action = lambda s: None
+		self.callbackfn = lambda s: None
+		self.action = lambda s: self.callback()
 	
 	def did_load(self):
 		self.iv = self['iv']
@@ -22,13 +23,19 @@ class CharPickerTile (ui.View):
 		self.add_subview(self.tv)
 		
 	def init(self, char, bg_color):
-		self.border_color = '#eee'
-		self.border_width = 1
-		self.corner_radius = 3
+		self._reset_border()
 		self.bg_color = bg_color
 		self.char = char
 		self.lbl.text = char
 		self.iv.image = ui.Image.named('imgs/%s_thumbh.png' % char)
+		
+	def callback(self):
+		self.callbackfn(self.char)
+		
+	def _reset_border(self):
+		self.border_color = '#eee'
+		self.border_width = 1
+		self.corner_radius = 3 
 		
 	@staticmethod
 	def load_view(char, bg_color='#000'):
