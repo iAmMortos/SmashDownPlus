@@ -2,6 +2,7 @@
 import ui
 import math
 from char_picker_tile import CharPickerTile
+from characters import Characters
 
 class CharPicker(ui.View):
 	def __init__(self):
@@ -10,12 +11,8 @@ class CharPicker(ui.View):
 		
 	def did_load(self):
 		self.sv = self['sv']
-		self.chars = []
-		with open('characters.txt') as f:
-			for line in f.readlines():
-				if line.strip() != '' and not line.startswith('#'):
-					self.chars.append(line.strip())
-		self.tiles = [CharPickerTile.load_view(ch) for ch in self.chars]
+		self.chars = Characters()
+		self.tiles = [CharPickerTile.load_view(ch) for ch in self.chars.list_roster()]
 		for tile in self.tiles:
 			self.sv.add_subview(tile)
 		

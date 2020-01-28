@@ -1,87 +1,84 @@
-Banjo & Kazooie
-Bayonetta
-Bowser
-Bowser Jr.
-# Byleth
-Captain Falcon
-Chrom
-Cloud
-Corrin
-Daisy
-Dark Pit
-5	Dark Samus
-Diddy Kong
-2	Donkey Kong
-Dr. Mario
-Duck Hunt
-Falco
-8	Fox
-Ganondorf
-Greninja
-Hero
-Ice Climbers
-Ike
-Incineroar
-Inkling
-Isabelle
-Jigglypuff
-Joker
-Ken
-King Dedede
-King K. Rool
-7	Kirby
-3	Link
-Little Mac
-Lucario
-Lucas
-Lucina
-Luigi
-1	Mario
-Marth
-Mega Man
-Meta Knight
-Mewtwo
-Mr. Game & Watch
-Ness
-Olimar
-Pac-Man
-Palutena
-Peach
-Pichu
-9	Pikachu
-Piranha Plant
-Pit
-Richter
-Ridley
-R.O.B.
-Robin
-Rosalina & Luma
-Roy
-Ryu
-4	Samus
-Sheik
-Shulk
-Simon
-Snake
-Sonic
-Terry
-Toon Link
-Villager
-Wario
-Wii Fit Trainer
-Wolf
-6	Yoshi
-Young Link
-Zelda
-Zero Suit Samus
-
-Pokemon Trainer
-# Squirtle
-# Ivysaur
-# Charizard
-
-# Mii Fighter
-
-# Mii Brawler
-# Mii Swordfighter
-# Mii Gunner
+01	Mario
+02	Donkey Kong
+03	Link
+04	Samus
+04e	Dark Samus
+05	Yoshi
+06	Kirby
+07	Fox
+08	Pikachu
+09	Luigi
+10	Ness
+11	Captain Falcon
+12	Jigglypuff
+13	Peach
+13e	Daisy
+14	Bowser
+15	Ice Climbers
+16	Sheik
+17	Zelda
+18	Dr. Mario
+19	Pichu
+20	Falco
+21	Marth
+21e	Lucina
+22	Young Link
+23	Ganondorf
+24	Mewtwo
+25	Roy
+25e	Chrom
+26	Mr. Game & Watch
+27	Meta Knight
+28	Pit
+28e	Dark Pit
+29	Zero Suit Samus
+30	Wario
+31	Snake
+32	Ike
+33-35	Pokemon Trainer
+# 33	Squirtle
+# 34	Ivysaur
+# 35	Charizard
+36	Diddy Kong
+37	Lucas
+38	Sonic
+39	King Dedede
+40	Olimar
+41	Lucario
+42	R.O.B.
+43	Toon Link
+44	Wolf
+45	Villager
+46	Mega Man
+47	Wii Fit Trainer
+48	Rosalina & Luma
+49	Little Mac
+50	Greninja
+# 51-53	Mii Fighter
+# 51	Mii Brawler
+# 52	Mii Swordfighter
+# 53	Mii Gunner
+54	Palutena
+55	Pac-Man
+56	Robin
+57	Shulk
+58	Bowser Jr.
+59	Duck Hunt
+60	Ryu
+60e	Ken
+61	Cloud
+62	Corrin
+63	Bayonetta
+64	Inkling
+65	Ridley
+66	Simon
+66e	Richter
+67	King K. Rool
+68	Isabelle
+69	Incineroar
+70	Piranha Plant
+71	Joker
+72	Hero
+73	Banjo & Kazooie
+74	Terry
+75	Byleth

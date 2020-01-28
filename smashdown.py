@@ -2,25 +2,18 @@ import random
 from player import Player
 from match_history import MatchHistory
 from datetime import datetime
+from characters import Characters
 
 
 class SmashDown(object):
 	def __init__(self, charfile, outfile, players):
-		self.charfile = charfile
 		self.outfile = outfile
 		self.players = self._make_player_dict(players)
-		self.characters = self._loadchars(charfile)
+		self._chars = Characters(charfile)
+		self.characters = self._chars.list_alpha()
 		self.total_matches = len(self.characters) // len(self.players)
 		self.history = MatchHistory(self.outfile)
 		self._completed_matches = 0
-		
-	def _loadchars(self, file):
-		cs = []
-		with open(file) as f:
-			for line in f.read().split('\n'):
-				if line.strip() != '' and not line.startswith('#'):
-					cs += [line.strip()]
-		return cs
 		
 	def _make_player_dict(self, players):
 		p = {}
@@ -38,7 +31,7 @@ class SmashDown(object):
 		return names
 		
 	def reset(self):
-		self.characters = self._loadchars(self.charfile)
+		self.characters = self._chars.list_alpha()
 		for player in self.players:
 			self.players[player].reset_wins()
 		self._completed_matches = 0
