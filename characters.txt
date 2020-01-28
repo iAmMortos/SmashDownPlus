@@ -2,7 +2,7 @@ Banjo & Kazooie
 Bayonetta
 Bowser
 Bowser Jr.
-Byleth
+# Byleth
 Captain Falcon
 Chrom
 Cloud
