@@ -1,0 +1,159 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 0}, {246, 438}}",
+        "class" : "ImageView",
+        "attributes" : {
+          "flex" : "WH",
+          "frame" : "{{85, 135}, {100, 100}}",
+          "class" : "ImageView",
+          "name" : "bg_img",
+          "uuid" : "1B04782B-C55D-4447-8506-B9B8FDB3BFAE"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 0}, {246, 438}}",
+        "class" : "ImageView",
+        "attributes" : {
+          "flex" : "WH",
+          "frame" : "{{85, 135}, {100, 100}}",
+          "class" : "ImageView",
+          "name" : "char_img",
+          "uuid" : "DD3D8C0D-7C63-41FC-854B-D7318F58F835"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 6}, {184, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "987D56C2-E00D-4683-B92C-6A2F86D6430A",
+          "flex" : "WB",
+          "corner_radius" : 0,
+          "background_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "frame" : "{{165, 144}, {150, 32}}",
+          "border_width" : 0,
+          "alignment" : "center",
+          "alpha" : 0.40000000000000008,
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "Player Name",
+          "font_name" : "<System-Bold>",
+          "class" : "Label",
+          "name" : "player_lbl",
+          "font_size" : 18
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{192, -5}, {48, 48}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "A9B7E0D0-9946-4C81-8780-32036802F40E",
+          "flex" : "LB",
+          "corner_radius" : 0,
+          "frame" : "{{165, 144}, {150, 32}}",
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_width" : 0,
+          "alignment" : "center",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "40",
+          "font_name" : "Futura-Bold",
+          "class" : "Label",
+          "name" : "score_lbl",
+          "font_size" : 32
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{192, 31}, {48, 20}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "A9B7E0D0-9946-4C81-8780-32036802F40E",
+          "font_size" : 15,
+          "corner_radius" : 0,
+          "frame" : "{{165, 144}, {150, 32}}",
+          "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "border_width" : 0,
+          "alignment" : "center",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "text" : "(adv)",
+          "font_name" : "Futura-Bold",
+          "class" : "Label",
+          "name" : "score_status_lbl",
+          "flex" : "LB"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 404}, {246, 34}}",
+        "class" : "Label",
+        "attributes" : {
+          "uuid" : "954A4908-C377-422A-84A6-92C429059421",
+          "flex" : "WT",
+          "background_color" : "RGBA(0.017296,0.017296,0.017296,1.000000)",
+          "frame" : "{{165, 144}, {150, 32}}",
+          "alignment" : "center",
+          "alpha" : 0.19999999999999996,
+          "text" : "",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+          "font_name" : "Futura-CondensedExtraBold",
+          "class" : "Label",
+          "name" : "char_lbl_bg",
+          "font_size" : 24
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{0, 404}, {246, 34}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "WT",
+          "font_size" : 24,
+          "font_name" : "Futura-CondensedExtraBold",
+          "frame" : "{{165, 144}, {150, 32}}",
+          "uuid" : "954A4908-C377-422A-84A6-92C429059421",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "Mr. Game & Watch",
+          "name" : "char_lbl",
+          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)"
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {246, 438}}",
+    "class" : "View",
+    "attributes" : {
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "enabled" : true,
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "custom_class" : "PlayerCharCard",
+      "flex" : ""
+    },
+    "selected" : false
+  }
+]

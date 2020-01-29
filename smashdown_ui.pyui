@@ -181,7 +181,7 @@
           "font_size" : 24,
           "font_name" : "Futura-CondensedExtraBold"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [
