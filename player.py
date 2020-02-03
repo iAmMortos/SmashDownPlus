@@ -1,6 +1,8 @@
 class Player(object):
-  def __init__(self, name):
+  def __init__(self, name, num):
     self.name = name
+    self.num = num
+    self.color = Player.get_color_for_player(num)
     self.cur_char = None
     self.wins = 0
 
@@ -9,3 +11,10 @@ class Player(object):
 
   def reset_wins(self):
     self.wins = 0
+    
+  @staticmethod
+  def get_color_for_player(num):
+    colors = []
+    with open('data/player_colors.txt') as f:
+      colors = [a.strip() for a in f.readlines()]
+    return colors[num - 1]

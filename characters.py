@@ -1,7 +1,7 @@
 
 class Characters(object):
 
-  def __init__(self, file='characters.txt'):
+  def __init__(self, file='data/characters.txt'):
     self._chars = {}
     self._excluded = {}
     with open(file) as f:

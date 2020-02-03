@@ -56,7 +56,7 @@ def main():
 	if len(players) == 0:
 		print('I mean... you gotta have *players*.')
 	else:
-		sd = SmashDown('characters.txt', 'history.txt', players)
+		sd = SmashDown('data/characters.txt', 'data/history.txt', players)
 		smash(sd)
 	
 

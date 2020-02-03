@@ -13,6 +13,22 @@ class MatchHistory(object):
     self.match_results.append(result)
     with open(self.historyfile, 'a') as f:
       f.write('%s\n' % result)
+      
+  def get_players_list(self):
+    players = []
+    for result in self.match_results:
+      ps = result.players
+      for p in ps:
+        if p not in players:
+          players.append(p)
+    return players
+    
+  def get_count(self, count_fn):
+    c = 0
+    for r in self.match_results:
+      if count_fn(r):
+        c += 1
+    return c
 
   def get_win_record(self, count_fn, win_fn):
     total = 0
@@ -23,6 +39,12 @@ class MatchHistory(object):
         if win_fn(r):
           won += 1
     return 0 if total == 0 else won / total
+    
+  def get_player_num_matches(self, player):
+    return self.get_count(lambda r: player in r.players)
+    
+  def get_player_num_matches_won(self, player):
+    return self.get_count(lambda r: player == r.winner)
 
   def get_player_win_record(self, player):
     c = lambda r: r.has_player(player)
@@ -83,3 +105,12 @@ class MatchHistory(object):
         if result.strip() != '':
           results.append(MatchResult.value_of(result))
     return results
+    
+
+if __name__ == '__main__':
+  mh = MatchHistory('data/history.txt')
+  players = mh.get_players_list()
+  for player in players:
+    c = mh.get_player_num_matches(player)
+    w = mh.get_player_num_matches_won(player)
+    print('{}: {:.2%} ({}/{})'.format(player, w/c, w, c))

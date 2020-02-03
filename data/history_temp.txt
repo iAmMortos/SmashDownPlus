@@ -1,0 +1,59 @@
+
+1580479070	1	Father1337|Ganondorf	Valfor|Incineroar
+1580479071	0	Father1337|Ike	Valfor|Snake
+1580479071	0	Father1337|Roy	Valfor|Samus
+1580479072	1	Father1337|Zelda	Valfor|Pac-Man
+1580479072	1	Father1337|Ice Climbers	Valfor|Falco
+1580479072	1	Father1337|Mega Man	Valfor|Inkling
+1580479073	0	Father1337|Corrin	Valfor|Yoshi
+1580479073	0	Father1337|Richter	Valfor|Young Link
+1580479073	0	Father1337|Marth	Valfor|Mr. Game & Watch
+1580479073	0	Father1337|Dr. Mario	Valfor|Joker
+1580479074	1	Father1337|Palutena	Valfor|Kirby
+1580479074	1	Father1337|Piranha Plant	Valfor|Zero Suit Samus
+1580479074	1	Father1337|Robin	Valfor|Hero
+1580491171	1	Father1337|Hero	Valfor|Little Mac
+1580491172	0	Father1337|Richter	Valfor|Donkey Kong
+1580491172	1	Father1337|Captain Falcon	Valfor|Dark Pit
+1580491172	0	Father1337|Ike	Valfor|Pokemon Trainer
+1580491172	1	Father1337|Young Link	Valfor|Cloud
+1580491172	0	Father1337|Sonic	Valfor|Pit
+1580491173	1	Father1337|Pac-Man	Valfor|Greninja
+1580491173	0	Father1337|Zelda	Valfor|Robin
+1580491173	1	Father1337|Joker	Valfor|Banjo & Kazooie
+1580491173	0	Father1337|Kirby	Valfor|Jigglypuff
+1580491173	1	Father1337|Fox	Valfor|Marth
+1580491174	1	Father1337|Wii Fit Trainer	Valfor|Chrom
+1580491174	1	Father1337|Ness	Valfor|Isabelle
+1580491174	0	Father1337|Mewtwo	Valfor|Pichu
+1580491174	1	Father1337|Corrin	Valfor|Ice Climbers
+1580491174	0	Father1337|Incineroar	Valfor|Dark Samus
+1580491174	1	Father1337|Pikachu	Valfor|Toon Link
+1580491175	0	Father1337|Piranha Plant	Valfor|Mr. Game & Watch
+1580491175	1	Father1337|Simon	Valfor|Lucario
+1580491175	0	Father1337|Lucina	Valfor|Yoshi
+1580491175	0	Father1337|Byleth	Valfor|Snake
+1580491176	0	Father1337|King K. Rool	Valfor|Bowser
+1580491176	0	Father1337|Wario	Valfor|Duck Hunt
+1580491176	0	Father1337|Link	Valfor|Inkling
+1580491176	0	Father1337|Lucas	Valfor|Luigi
+1580491177	0	Father1337|Samus	Valfor|King Dedede
+1580491177	1	Father1337|Zero Suit Samus	Valfor|Ridley
+1580491177	1	Father1337|Ganondorf	Valfor|Daisy
+1580491177	1	Father1337|Mario	Valfor|Peach
+1580491177	1	Father1337|Mega Man	Valfor|Falco
+1580491177	0	Father1337|Meta Knight	Valfor|Olimar
+1580491178	1	Father1337|Bayonetta	Valfor|Wolf
+1580491178	0	Father1337|Terry	Valfor|Dr. Mario
+1580491178	1	Father1337|R.O.B.	Valfor|Palutena
+1580491178	0	Father1337|Ryu	Valfor|Bowser Jr.
+1580491178	1	Father1337|Sheik	Valfor|Ken
+1580491178	0	Father1337|Diddy Kong	Valfor|Rosalina & Luma
+1580491178	1	Father1337|Roy	Valfor|Shulk
+1580694877	0	Father1337|Simon	Valfor|Inkling
+1580694878	1	Father1337|Toon Link	Valfor|Piranha Plant
+1580694878	1	Father1337|Pokemon Trainer	Valfor|Diddy Kong
+1580694879	0	Father1337|Donkey Kong	Valfor|R.O.B.
+1580694879	0	Father1337|Shulk	Valfor|Wolf
+1580694880	0	Father1337|Mega Man	Valfor|Cloud
+1580694880	1	Father1337|Zelda	Valfor|Greninja

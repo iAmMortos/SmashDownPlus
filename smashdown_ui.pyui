@@ -125,28 +125,6 @@
         "nodes" : [
 
         ],
-        "frame" : "{{0, 266}, {480, 34}}",
-        "class" : "Label",
-        "attributes" : {
-          "uuid" : "954A4908-C377-422A-84A6-92C429059421",
-          "font_size" : 24,
-          "background_color" : "RGBA(0.017296,0.017296,0.017296,1.000000)",
-          "frame" : "{{165, 144}, {150, 32}}",
-          "alignment" : "center",
-          "alpha" : 0.19999999999999996,
-          "text" : "",
-          "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
-          "font_name" : "Futura-CondensedExtraBold",
-          "class" : "Label",
-          "name" : "",
-          "flex" : "WT"
-        },
-        "selected" : false
-      },
-      {
-        "nodes" : [
-
-        ],
         "frame" : "{{240, 266}, {240, 34}}",
         "class" : "Label",
         "attributes" : {
@@ -199,7 +177,7 @@
           "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "border_width" : 0,
           "title" : "",
-          "alpha" : 0.80000000000000004,
+          "alpha" : 1,
           "class" : "Button",
           "image_name" : "iob:checkmark_32",
           "flex" : "RT"
@@ -222,7 +200,7 @@
           "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "border_width" : 0,
           "title" : "",
-          "alpha" : 0.80000000000000004,
+          "alpha" : 1,
           "class" : "Button",
           "name" : "btn_swap",
           "font_size" : 15
@@ -245,7 +223,7 @@
           "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "border_width" : 0,
           "title" : "",
-          "alpha" : 0.80000000000000004,
+          "alpha" : 1,
           "class" : "Button",
           "name" : "btn_p2_win",
           "font_size" : 15
@@ -268,7 +246,7 @@
           "tint_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "border_width" : 0,
           "title" : "",
-          "alpha" : 0.5,
+          "alpha" : 1,
           "class" : "Button",
           "image_name" : "iob:loop_256",
           "flex" : "LRTB"
@@ -289,7 +267,7 @@
           "frame" : "{{165, 144}, {150, 32}}",
           "border_width" : 0,
           "alignment" : "center",
-          "alpha" : 0.40000000000000008,
+          "alpha" : 1,
           "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "text" : "Player 1 Name",
           "font_name" : "<System-Bold>",
@@ -313,7 +291,7 @@
           "frame" : "{{165, 144}, {150, 32}}",
           "border_width" : 0,
           "alignment" : "center",
-          "alpha" : 0.40000000000000008,
+          "alpha" : 1,
           "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "text" : "Player 2 Name",
           "font_name" : "<System-Bold>",
@@ -447,7 +425,7 @@
           "background_color" : "RGBA(0.028302,0.028302,0.028302,1.000000)",
           "frame" : "{{165, 144}, {150, 32}}",
           "alignment" : "center",
-          "alpha" : 0.5,
+          "alpha" : 1,
           "text_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
           "text" : "Label",
           "font_name" : "<System>",
