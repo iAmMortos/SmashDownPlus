@@ -1,6 +1,7 @@
 
 import os
 
+
 class SmashDownProgress (object):
   
   def __init__(self, file='data/progress.txt'):
@@ -22,12 +23,11 @@ class SmashDownProgress (object):
     
   def _write(self):
     with open(self.outfile, 'w') as f:
-      out = []
-      out.append(str(self.total_matches))
-      out.append('|'.join(self.players))
-      out.append('|'.join([str(i) for i in self.wins]))
-      out.append('|'.join(self.current_chars))
-      out.append('|'.join(self.remaining_chars))
+      out = [str(self.total_matches),
+             '|'.join(self.players),
+             '|'.join([str(i) for i in self.wins]),
+             '|'.join(self.current_chars),
+             '|'.join(self.remaining_chars)]
       f.write('\n'.join(out))
     
   def update(self, total_matches, players, remaining_chars):
