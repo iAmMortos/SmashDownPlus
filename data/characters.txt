@@ -82,3 +82,4 @@
 73	Banjo & Kazooie
 74	Terry
 75	Byleth
+76	Min Min

@@ -1,2 +1,4 @@
-/history.txt
-/history_temp.txt
+/data/history.txt
+/data/history_temp.txt
+/data/progress.txt
+/.idea
