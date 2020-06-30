@@ -83,8 +83,8 @@ class SmashDown(object):
     self.players[player].win()
     self.history.add_winner(self.get_player_char_map(), player, int(datetime.utcnow().timestamp()))
     self._completed_matches += 1
-    if self._completed_matches == self.total_matches:
-      self.progress.reset()
+    # if self._completed_matches == self.total_matches:
+    #  self.progress.reset()
 
   @property
   def num_players(self):

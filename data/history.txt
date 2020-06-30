@@ -139,3 +139,41 @@
 1580485301	1	Father1337|Pac-Man	Valfor|Daisy
 1580485584	1	Father1337|Roy	Valfor|Link
 1580485910	0	Father1337|Isabelle	Valfor|Dr. Mario
+1581260338	0	Father1337|Hero	Valfor|King Dedede
+1581260567	1	Father1337|Roy	Valfor|Lucas
+1581260760	0	Father1337|Terry	Valfor|Ryu
+1581260962	1	Father1337|Mr. Game & Watch	Valfor|Incineroar
+1581261219	0	Father1337|Mario	Valfor|Luigi
+1581261420	0	Father1337|Isabelle	Valfor|Simon
+1581261602	1	Father1337|Piranha Plant	Valfor|Byleth
+1581261898	0	Father1337|Mega Man	Valfor|Bayonetta
+1581262130	1	Father1337|Duck Hunt	Valfor|Corrin
+1581262298	1	Father1337|Ike	Valfor|Greninja
+1581262487	1	Father1337|Sonic	Valfor|Pichu
+1581262730	1	Father1337|Ganondorf	Valfor|Peach
+1581262996	1	Father1337|Cloud	Valfor|Bowser Jr.
+1581263132	1	Father1337|Jigglypuff	Valfor|Robin
+1581263261	0	Father1337|Ken	Valfor|Wolf
+1581263417	0	Father1337|Villager	Valfor|Little Mac
+1581263669	1	Father1337|Link	Valfor|Daisy
+1581263995	1	Father1337|Wario	Valfor|Olimar
+1581264229	1	Father1337|Rosalina & Luma	Valfor|Wii Fit Trainer
+1581264502	1	Father1337|Richter	Valfor|Pikachu
+1581264688	1	Father1337|Yoshi	Valfor|Ness
+1581264872	1	Father1337|Fox	Valfor|Lucina
+1581265087	0	Father1337|Sheik	Valfor|Diddy Kong
+1581265349	0	Father1337|Joker	Valfor|Kirby
+1581265521	1	Father1337|Bowser	Valfor|Dark Pit
+1581265937	0	Father1337|Young Link	Valfor|Shulk
+1581266181	0	Father1337|Ridley	Valfor|Meta Knight
+1581266322	1	Father1337|Samus	Valfor|Donkey Kong
+1581266532	0	Father1337|Toon Link	Valfor|Lucario
+1581266767	0	Father1337|R.O.B.	Valfor|Mewtwo
+1581267037	1	Father1337|Inkling	Valfor|Dark Samus
+1581267218	0	Father1337|Falco	Valfor|Ice Climbers
+1581267476	1	Father1337|King K. Rool	Valfor|Captain Falcon
+1581267624	0	Father1337|Dr. Mario	Valfor|Snake
+1581267809	1	Father1337|Chrom	Valfor|Pit
+1581267947	0	Father1337|Pokemon Trainer	Valfor|Marth
+1581268076	0	Father1337|Banjo & Kazooie	Valfor|Zero Suit Samus
+1581268264	1	Father1337|Pac-Man	Valfor|Zelda

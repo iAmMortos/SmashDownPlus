@@ -46,7 +46,17 @@ class SmashDownProgress (object):
       with open(self.outfile) as f:
         lines = f.read().split('\n')
         self.total_matches = 0 if lines[0] == '' else int(lines[0])
-        self.players = lines[1].split('|')
+        self.players = [] if lines[1].strip() == '' else lines[1].split('|')
         self.wins = [] if lines[2] == '' else [int(w) for w in lines[2].split('|')]
-        self.current_chars = lines[3].split('|')
-        self.remaining_chars = lines[4].split('|')
+        self.current_chars = [] if lines[3].strip() == '' else lines[3].split('|')
+        self.remaining_chars = [] if lines[4].strip() == '' else lines[4].split('|')
+        
+        
+if __name__ == '__main__':
+  sdp = SmashDownProgress()
+  print('total matches: {}\nplayers: {}\nwins: {}\ncurrent_chars: {}\nremaining_chars: {}'.format(sdp.total_matches, 
+             sdp.players,
+             sdp.wins,
+             sdp.current_chars,
+             sdp.remaining_chars))
+  
