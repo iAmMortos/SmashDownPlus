@@ -1,8 +1,9 @@
 import random
-from player import Player
-from match_history import MatchHistory
 from datetime import datetime
+
 from characters import Characters
+from match_history import MatchHistory
+from player import Player
 from smashdown_progress import SmashDownProgress
 
 
@@ -11,18 +12,19 @@ class SmashDown(object):
     self.outfile = outfile
     self._chars = Characters(charfile)
     self.history = MatchHistory(self.outfile)
-    
+
     if type(charfile) == SmashDownProgress:
       self.progress = charfile
       self.players = self._make_player_dict(self.progress.players)
-      for i,player in self.players:
+      for i, player in self.players:
         self.players[i].wins = self.progress.wins[i]
         self.players[i].cur_char = self.progress.current_chars[i]
       self.characters = self.progress.remaining_chars
       self.total_matches = self.progress.total_matches
-      self._completed_matches = self.total_matches - (len(self.progress.remaining_chars) + len(self.progress.current_chars)) // 2
+      self._completed_matches = self.total_matches - (
+            len(self.progress.remaining_chars) + len(self.progress.current_chars)) // 2
     else:
-      if players == None:
+      if players is None:
         raise Exception('Argument Exception: the players argument is only optional in the progress constructor.')
       self.progress = SmashDownProgress()
       self.players = self._make_player_dict(players)
@@ -33,8 +35,8 @@ class SmashDown(object):
 
   def _make_player_dict(self, players):
     p = {}
-    for i,player in enumerate(players):
-      p[player] = Player(player, i+1)
+    for i, player in enumerate(players):
+      p[player] = Player(player, i + 1)
     return p
 
   def deal_chars(self):
@@ -114,4 +116,3 @@ def main():
 
 if __name__ == '__main__':
   main()
-
