@@ -1,12 +1,12 @@
-import ui
+import views
 
-class PlayerCharCard(ui.View):
+class PlayerCharCard(views.View):
 
   def did_load(self):
     self.bg_img = self['bg_img']
-    self.bg_img.content_mode = ui.CONTENT_SCALE_ASPECT_FILL
+    self.bg_img.content_mode = views.CONTENT_SCALE_ASPECT_FILL
     self.char_img = self['char_img']
-    self.char_img.content_mode = ui.CONTENT_SCALE_ASPECT_FILL
+    self.char_img.content_mode = views.CONTENT_SCALE_ASPECT_FILL
     self.char_lbl = self['char_lbl']
     self.char_lbl_bg = self['char_lbl_bg']
     self.player_lbl = self['player_lbl']
@@ -18,13 +18,13 @@ class PlayerCharCard(ui.View):
     self.player_lbl.text = player
 
   def set_char(self, char):
-    self.bg_img.image = ui.Image.named('imgs/%s_bg.jpg' % char)
-    self.char_img.image = ui.Image.named('imgs/%s_0.png' % char)
+    self.bg_img.image = views.Image.named('imgs/%s_bg.jpg' % char)
+    self.char_img.image = views.Image.named('imgs/%s_0.png' % char)
     self.char_lbl.text = char
 
   @staticmethod
   def load_view(player, char):
-    v = ui.load_view()
+    v = views.load_view()
     v.init(player, char)
     return v
 
@@ -32,7 +32,7 @@ class PlayerCharCard(ui.View):
 if __name__ == '__main__':
   from characters import Characters
   import random
-  v = ui.View()
+  v = views.View()
   _,_,w,h = v.frame
   cs = Characters().list_alpha()
   players = ['Father1337', 'Valfor']
