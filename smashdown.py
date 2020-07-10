@@ -2,6 +2,8 @@ import random
 from datetime import datetime
 
 import smashdown_cli
+from views.smashdown_ui import SmashDownUI
+
 from characters import Characters
 from match_history import MatchHistory
 from player import Player
@@ -124,14 +126,15 @@ def get_properties():
 
 def main():
   players = ['Father1337', 'Valfor']
-  sd = SmashDown('data/characters.txt', 'data/history.txt', players)
+  sd = SmashDown('data/characters.txt', 'data/history_temp.txt', players)
   props = get_properties()
   run_type = props['run_type']
 
   if run_type == 'cli':
     smashdown_cli.smash(sd)
   elif run_type == 'gui':
-    print("gui detected")
+    v = SmashDownUI.load_view('data/characters.txt', 'data/history_temp.txt', ['Father1337', 'Valfor'])
+    v.present(orientations=['landscape'], hide_title_bar=True)
 
 
 if __name__ == '__main__':

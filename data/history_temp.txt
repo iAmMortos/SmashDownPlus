@@ -57,3 +57,6 @@
 1580694879	0	Father1337|Shulk	Valfor|Wolf
 1580694880	0	Father1337|Mega Man	Valfor|Cloud
 1580694880	1	Father1337|Zelda	Valfor|Greninja
+1594390540	0	Father1337|Peach	Valfor|Richter
+1594390547	1	Father1337|Rosalina & Luma	Valfor|Mr. Game & Watch
+1594390550	0	Father1337|Villager	Valfor|Sheik
