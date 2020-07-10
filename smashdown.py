@@ -1,10 +1,11 @@
 import random
 from datetime import datetime
 
+import smashdown_cli
 from characters import Characters
 from match_history import MatchHistory
 from player import Player
-from smashdown_progress import SmashDownProgress
+# from smashdown_progress import SmashDownProgress
 
 
 class SmashDown(object):
@@ -13,25 +14,26 @@ class SmashDown(object):
     self._chars = Characters(charfile)
     self.history = MatchHistory(self.outfile)
 
-    if type(charfile) == SmashDownProgress:
-      self.progress = charfile
-      self.players = self._make_player_dict(self.progress.players)
-      for i, player in self.players:
-        self.players[i].wins = self.progress.wins[i]
-        self.players[i].cur_char = self.progress.current_chars[i]
-      self.characters = self.progress.remaining_chars
-      self.total_matches = self.progress.total_matches
-      self._completed_matches = self.total_matches - (
-            len(self.progress.remaining_chars) + len(self.progress.current_chars)) // 2
-    else:
-      if players is None:
-        raise Exception('Argument Exception: the players argument is only optional in the progress constructor.')
-      self.progress = SmashDownProgress()
-      self.players = self._make_player_dict(players)
-      self.characters = self._chars.list_alpha()
-      self.total_matches = len(self.characters) // len(self.players)
-      self._completed_matches = 0
-    self.progress.update(self.total_matches, self.players, self.characters)
+    # if type(charfile) == SmashDownProgress:
+    #   self.progress = charfile
+    #   self.players = self._make_player_dict(self.progress.players)
+    #   for i, player in self.players:
+    #     self.players[i].wins = self.progress.wins[i]
+    #     self.players[i].cur_char = self.progress.current_chars[i]
+    #   self.characters = self.progress.remaining_chars
+    #   self.total_matches = self.progress.total_matches
+    #   self._completed_matches = self.total_matches - (
+    #         len(self.progress.remaining_chars) + len(self.progress.current_chars)) // 2
+    # else:
+    # if players is None:
+    #   raise Exception('Argument Exception: the players argument is only optional in the progress constructor.')
+    # self.progress = SmashDownProgress()
+    self.players = self._make_player_dict(players)
+    self.characters = self._chars.list_alpha()
+    self.total_matches = len(self.characters) // len(self.players)
+    self._completed_matches = 0
+
+    # self.progress.update(self.total_matches, self.players, self.characters)
 
   def _make_player_dict(self, players):
     p = {}
@@ -54,7 +56,7 @@ class SmashDown(object):
       self.players[player].reset_wins()
     self._completed_matches = 0
     self.total_matches = len(self.characters) // len(self.players)
-    self.progress.update(self.total_matches, self.players, self.characters)
+    # self.progress.update(self.total_matches, self.players, self.characters)
 
   def swap_chars(self, p1=None, p2=None):
     if p1 is None and p2 is None and self.num_players == 2:
@@ -109,9 +111,27 @@ class SmashDown(object):
     return self._completed_matches
 
 
+def get_properties():
+  props = {}
+  with open('data/app.properties') as f:
+    lines = [l.strip() for l in f.readlines()]
+    for line in lines:
+      if line.strip() != '':
+        k, v = line.split('=')
+        props[k] = v
+  return props
+
+
 def main():
   players = ['Father1337', 'Valfor']
   sd = SmashDown('data/characters.txt', 'data/history.txt', players)
+  props = get_properties()
+  run_type = props['run_type']
+
+  if run_type == 'cli':
+    smashdown_cli.smash(sd)
+  elif run_type == 'gui':
+    print("gui detected")
 
 
 if __name__ == '__main__':

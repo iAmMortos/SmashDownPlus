@@ -1,10 +1,10 @@
 
-import views
+import ui
 import math
 from views.char_picker_tile import CharPickerTile
 from characters import Characters
 
-class CharPicker(views.View):
+class CharPicker(ui.View):
   def __init__(self):
     self._tile_size = (194, 47)
     self.result = None
@@ -48,7 +48,7 @@ class CharPicker(views.View):
 
   @staticmethod
   def load_view():
-    return views.load_view()
+    return ui.load_view()
 
 if __name__ == '__main__':
   v = CharPicker.load_view()

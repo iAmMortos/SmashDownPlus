@@ -1,10 +1,10 @@
-import views
+import ui
 
 import sharedlibs
 sharedlibs.add_path_for('touch_view')
 from touch_view import TouchView
 
-class CharPickerTile (views.View):
+class CharPickerTile (ui.View):
 
   def __init__(self):
     self.callbackfn = lambda s: None
@@ -12,7 +12,7 @@ class CharPickerTile (views.View):
 
   def did_load(self):
     self.iv = self['iv']
-    self.content_mode = views.CONTENT_SCALE_ASPECT_FIT
+    self.content_mode = ui.CONTENT_SCALE_ASPECT_FIT
 
     self.lbl = self['lbl']
 
@@ -27,7 +27,7 @@ class CharPickerTile (views.View):
     self.bg_color = bg_color
     self.char = char
     self.lbl.text = char
-    self.iv.image = views.Image.named('imgs/%s_thumbh.png' % char)
+    self.iv.image = ui.Image.named('imgs/%s_thumbh.png' % char)
 
   def callback(self):
     self.callbackfn(self.char)
@@ -39,7 +39,7 @@ class CharPickerTile (views.View):
 
   @staticmethod
   def load_view(char, bg_color='#000'):
-    v = views.load_view()
+    v = ui.load_view()
     v.init(char, bg_color)
     return v
 
@@ -48,6 +48,6 @@ if __name__ == '__main__':
   cpt = CharPickerTile.load_view('R.O.B.')
   cpt.frame = (10, 10, 194, 46)
   cpt.action = lambda s: print(cpt.char)
-  v = views.View()
+  v = ui.View()
   v.add_subview(cpt)
   v.present()

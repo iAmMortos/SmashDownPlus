@@ -4,26 +4,26 @@ sharedlibs.add_path_for('img_utils', 'color_utils')
 import img_utils
 from color_utils import Color
 
-import views
+import ui
 from PIL import Image
 from smashdown import SmashDown
 from smashdown_progress import SmashDownProgress
 from player import Player
 
-class SmashDownUI (views.View):
+class SmashDownUI (ui.View):
 
   def did_load(self):
     self.i1 = self['iv_p1']
-    self.i1.content_mode = views.CONTENT_SCALE_ASPECT_FIT
+    self.i1.content_mode = ui.CONTENT_SCALE_ASPECT_FIT
 
     self.i2 = self['iv_p2']
-    self.i2.content_mode = views.CONTENT_SCALE_ASPECT_FIT
+    self.i2.content_mode = ui.CONTENT_SCALE_ASPECT_FIT
 
     self.bg1 = self['bg1v']['bg1']
-    self.bg1.content_mode = views.CONTENT_SCALE_ASPECT_FILL
+    self.bg1.content_mode = ui.CONTENT_SCALE_ASPECT_FILL
 
     self.bg2 = self['bg2v']['bg2']
-    self.bg2.content_mode = views.CONTENT_SCALE_ASPECT_FILL
+    self.bg2.content_mode = ui.CONTENT_SCALE_ASPECT_FILL
 
     self.n1 = self['lbl_p1']
     self.n2 = self['lbl_p2']
@@ -120,10 +120,10 @@ class SmashDownUI (views.View):
     c2 = chars[self.p2_name]
     self.c1.text = c1
     self.c2.text = c2
-    self.i1.image = views.Image.named('imgs/%s_0.png' % c1)
-    self.i2.image = views.Image.named('imgs/%s_0.png' % c2)
-    self.bg1.image = views.Image.named('imgs/%s_bg.jpg' % c1)
-    self.bg2.image = views.Image.named('imgs/%s_bg.jpg' % c2)
+    self.i1.image = ui.Image.named('imgs/%s_0.png' % c1)
+    self.i2.image = ui.Image.named('imgs/%s_0.png' % c2)
+    self.bg1.image = ui.Image.named('imgs/%s_bg.jpg' % c1)
+    self.bg2.image = ui.Image.named('imgs/%s_bg.jpg' % c2)
     
     # cool proof of concept for player-tinted backgrounds, but SUPER inefficient for these purposes.
     #p1_color = self.sd.players[self.p1_name].color
@@ -198,7 +198,7 @@ class SmashDownUI (views.View):
 
   @staticmethod
   def load_view(charfile, outfile, players):
-    v = views.load_view()
+    v = ui.load_view()
     v.init(charfile, outfile, players)
     return v
 
