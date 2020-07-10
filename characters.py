@@ -7,13 +7,14 @@ class Characters(object):
     with open(file) as f:
       lines = [line.strip() for line in f.readlines()]
       for line in lines:
-        if not line.startswith('#'):
-          num, char = line.split('\t')
-          self._chars[num] = char
-        else:
-          exline = line[1:].strip()
-          num, char = exline.split('\t')
-          self._excluded[num] = char
+        if line.strip() != '':
+          if not line.startswith('#'):
+            num, char = line.split('|')
+            self._chars[num] = char
+          else:
+            exline = line[1:].strip()
+            num, char = exline.split('|')
+            self._excluded[num] = char
 
   def list_alpha(self):
     return sorted(list(self._chars.values()))
@@ -28,3 +29,4 @@ class Characters(object):
 if __name__ == '__main__':
   c = Characters()
   print(c.list_roster())
+  print(len(c), 'characters')
