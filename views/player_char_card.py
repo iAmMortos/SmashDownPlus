@@ -1,6 +1,15 @@
 import ui
 
 class PlayerCharCard(ui.View):
+  
+  def __init__(self):
+    self.bg_img = None
+    self.char_img = None
+    self.char_lbl = None
+    self.char_lbl_bg = None
+    self.player_lbl = None
+    self.score_lbl = None
+    self.score_status_lbl = None
 
   def did_load(self):
     self.bg_img = self['bg_img']
@@ -28,20 +37,3 @@ class PlayerCharCard(ui.View):
     v.init(player, char)
     return v
 
-
-if __name__ == '__main__':
-  from characters import Characters
-  import random
-  v = ui.View()
-  _,_,w,h = v.frame
-  cs = Characters().list_alpha()
-  players = ['Father1337', 'Valfor']
-  cards = []
-  for i, player in enumerate(players):
-    char = random.choice(cs)
-    cs.remove(char)
-    card = PlayerCharCard.load_view(player, char)
-    card.flex = 'WHLRTB'
-    card.frame = (i*(w/len(players)), 0, w/len(players), h)
-    v.add_subview(card)
-  v.present(orientations=['landscape'], hide_title_bar=True)
