@@ -42,12 +42,4 @@ class CharPickerTile (ui.View):
     v = ui.load_view()
     v.init(char, bg_color)
     return v
-
-
-if __name__ == '__main__':
-  cpt = CharPickerTile.load_view('R.O.B.')
-  cpt.frame = (10, 10, 194, 46)
-  cpt.action = lambda s: print(cpt.char)
-  v = ui.View()
-  v.add_subview(cpt)
-  v.present()
+    
