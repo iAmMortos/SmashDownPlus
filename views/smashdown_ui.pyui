@@ -159,7 +159,7 @@
           "font_size" : 24,
           "font_name" : "Futura-CondensedExtraBold"
         },
-        "selected" : true
+        "selected" : false
       },
       {
         "nodes" : [
@@ -182,7 +182,7 @@
           "image_name" : "iob:checkmark_32",
           "flex" : "RT"
         },
-        "selected" : false
+        "selected" : true
       },
       {
         "nodes" : [

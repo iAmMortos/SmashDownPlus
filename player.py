@@ -1,9 +1,9 @@
 class Player(object):
-  def __init__(self, name, num):
+  def __init__(self, name, num, char=None):
     self.name = name
     self.num = num
     self.color = Player.get_color_for_player(num)
-    self.cur_char = None
+    self.cur_char = char
     self.wins = 0
 
   def win(self):

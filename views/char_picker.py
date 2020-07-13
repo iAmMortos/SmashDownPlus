@@ -50,8 +50,3 @@ class CharPicker(ui.View):
   def load_view():
     return ui.load_view()
 
-if __name__ == '__main__':
-  v = CharPicker.load_view()
-  v.present()
-  v.wait_modal()
-  print(v.result)
