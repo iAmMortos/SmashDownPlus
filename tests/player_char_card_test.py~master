@@ -1,5 +1,7 @@
 
+import test_context
 import ui
+
 from views.player_char_card import PlayerCharCard
 
 if __name__ == '__main__':

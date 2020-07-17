@@ -4,14 +4,17 @@ from datetime import datetime
 from characters import Characters
 from match_history import MatchHistory
 from player import Player
+
+import sharedlibs
+sharedlibs.add_path_for('config_file')
+from config_file import ConfigFile
 # from smashdown_progress import SmashDownProgress
 
-
 class SmashDown(object):
-  def __init__(self, charfile, outfile, players=None):
-    self.outfile = outfile
-    self._chars = Characters(charfile)
-    self.history = MatchHistory(self.outfile)
+  def __init__(self, players=None):
+    self.config = ConfigFile('data/app.config')
+    self._chars_obj = Characters(self.config.get('characters'))
+    self._history = MatchHistory(self.config.get('history'))
 
     # if type(charfile) == SmashDownProgress:
     #   self.progress = charfile
@@ -28,7 +31,7 @@ class SmashDown(object):
     #   raise Exception('Argument Exception: the players argument is only optional in the progress constructor.')
     # self.progress = SmashDownProgress()
     self.players = self._make_player_dict(players)
-    self.characters = self._chars.list_alpha()
+    self.characters = self._chars_obj.list_alpha()
     self.total_matches = len(self.characters) // len(self.players)
     self._completed_matches = 0
 
@@ -50,7 +53,7 @@ class SmashDown(object):
     return names
 
   def reset(self):
-    self.characters = self._chars.list_alpha()
+    self.characters = self._chars_obj.list_alpha()
     for player in self.players:
       self.players[player].reset_wins()
     self._completed_matches = 0
@@ -84,7 +87,7 @@ class SmashDown(object):
 
   def winner(self, player):
     self.players[player].win()
-    self.history.add_winner(self.get_player_char_map(), player, int(datetime.utcnow().timestamp()))
+    self._history.add_winner(self.get_player_char_map(), player, int(datetime.utcnow().timestamp()))
     self._completed_matches += 1
     # if self._completed_matches == self.total_matches:
     #  self.progress.reset()
@@ -124,8 +127,9 @@ def get_properties():
 def main():
   players = ['Father1337', 'Valfor']
   sd = SmashDown('data/characters.txt', 'data/history_temp.txt', players)
-  props = get_properties()
-  run_type = props['run_type']
+  # props = get_properties()
+  config = ConfigFile('data/app.config')
+  run_type = config.get('run_type')
 
   if run_type == 'cli':
     import smashdown_cli

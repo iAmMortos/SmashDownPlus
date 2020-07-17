@@ -12,18 +12,6 @@ from player import Player
 class SmashDownGUI (ui.View):
 
   def __init__(self):
-    self.i1 = None
-    self.i2 = None
-    self.bg1 = None
-    self.bg2 = None
-    self.n1 = None
-    self.n2 = None
-    self.c1 = None
-    self.c2 = None
-    self.score1 = None
-    self.score2 = None
-    self.adv1 = None
-    self.adv2 = None
     self.info = None
     self.btn_swap = None
     self.btn_p1_win = None
@@ -32,28 +20,6 @@ class SmashDownGUI (ui.View):
     self.game_over = None
 
   def did_load(self):
-    self.i1 = self['iv_p1']
-    self.i1.content_mode = ui.CONTENT_SCALE_ASPECT_FIT
-
-    self.i2 = self['iv_p2']
-    self.i2.content_mode = ui.CONTENT_SCALE_ASPECT_FIT
-
-    self.bg1 = self['bg1v']['bg1']
-    self.bg1.content_mode = ui.CONTENT_SCALE_ASPECT_FILL
-
-    self.bg2 = self['bg2v']['bg2']
-    self.bg2.content_mode = ui.CONTENT_SCALE_ASPECT_FILL
-
-    self.n1 = self['lbl_p1']
-    self.n2 = self['lbl_p2']
-    self.c1 = self['ch1']
-    self.c1.bg_color = Color(0, 0, 0, .2).as_tuple()
-    self.c2 = self['ch2']
-    self.c2.bg_color = Color(0, 0, 0, .2).as_tuple()
-    self.score1 = self['score1']
-    self.score2 = self['score2']
-    self.adv1 = self['adv1']
-    self.adv2 = self['adv2']
     self.info = self['info_lbl']
     self.info.bg_color = Color(0, 0, 0, .5).as_tuple()
 
